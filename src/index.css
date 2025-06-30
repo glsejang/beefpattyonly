@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('./nomarlize.css');
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+*{ 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color:  red;
+
+}
+li{
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+.wrap{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+}
+
+
+header{
+  height:15%;
+  width: 100%;
+  background-image: 
+    linear-gradient(to bottom, rgba(223, 137, 67, 0.8), #d17026),
+    url('./images/header.png');
+  background-repeat: repeat;
+  background-size: 400px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-family: 'Bagel Fat One', cursive;
+  letter-spacing: 2px;
+  
+ 
+
+}
+
+nav{
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  height: 100%;
+}
+
+.navTop{
+  height: 50%;
+  background-image: repeating-linear-gradient(
+    90deg,              
+    #ffcc00,            
+    #ffcc00 20px,       
+    #fade6c 20px,      
+    #fade6c 40px        
+  );
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navBot{
+  width: 100%;
+  height: 50%;
+  background-color: red;
+}
+
+.menu{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+
+
+.menu li {
+  margin-top:20px ;
+  margin-left: 10px;
+  font-weight: 700;
+  color: green
+}
+
+.menu li:first-child{
+  margin-top: 100px;
+}
+
+
+.box{
+  width: 85%;
+  height: 100%;
+}
+
+
+main{
+  height: 75%;
+  width: 100%;
+  background-color: #fcebae;
+  color:  black;
+  overflow: hidden;
+}
+
+.daemoon_box{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bagel fat one';
+  font-size: 2rem;
+  color: white;
+  -webkit-text-stroke: 1px rgb(247, 173, 15); /* 두께와 색상 */
+}
+
+
+
+.main_post{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main_post h3{
+  display: block;
+  height: 50px;
+}
+
+
+
+
+.Beef{
+  padding: 0;
+  width: 100%;
+  color: rgb(100, 39, 3);
+  height: 25%;
+  background-image: url('/images/비프.jpg');
+  background-repeat: repeat;        /* 이미지 반복 */
+  background-size: 200px 200px;     /* 각 이미지 크기 조절 */
+  background-position: center;      /* 가운데 정렬 */
+}
+.Chicken{
+  color: rgb(201, 107, 53);
+  width: 100%;
+  height: 25%;
+  background-image: url('/images/치킨.jpg');
+  background-repeat: repeat;        /* 이미지 반복 */
+  background-size: 200px 200px;     /* 각 이미지 크기 조절 */
+  background-position: center;      /* 가운데 정렬 */
+}
+.Other{
+  color: rgb(231, 92, 11);
+
+  width: 100%;
+  height: 25%;
+  background-image: url('/images/쉬림프.jpg');
+  background-repeat: repeat;        /* 이미지 반복 */
+  background-size: 200px 200px;     /* 각 이미지 크기 조절 */
+  background-position: center;      /* 가운데 정렬 */
+}
+
+
+
+footer{
+  width: 100%;
+  height: 10%;
+  background-color: #D36F24;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 30px;
+}
+footer p{
+  font-size: 0.6rem;
+ 
+}
+
+
+.home_preview{
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+  width: 100%;
+  height: 20%;
+  background-color: #ffdb0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero p{
+  display: block;
+  height: 30px;
+  color: white;
+  font-size: 1.1rem;
+  background-color: rgb(196, 6, 6);
+  font-family: 'Bagel Fat One';
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+
+.hero p:last-child{
+  font-family: sans-serif;
+}
+
+.hero img{
+  width: 100%;
+  height: 50%;
+}
+
+.preview{
+  width: 100%;
+  
+}
+
+
+.main_post table{
+  width: 100%;
+  padding: 10px;
+  border-collapse: separate;     /* 기본값은 collapse라 마진 없음 */
+
+}
+
+.main_post tbody{
+  width: 100%;
+}
+
+.main_post tbody tr{
+  height: 100px;
+  transition: background-color 0.3s ease;
+  background-color: #fff5d4;
+}
+
+.main_post tbody tr td:first-child{
+  height: 100px;
+  width: 100px;
+  
+}
+
+
+.main_post tbody tr:hover {
+  background-color: #ffd700 !important; 
+  color: #fa593d !important;;
+}
+
+.main_post tbody tr td:nth-child(2) {
+  padding-left: 40px;
+}
+
+.main_post tbody tr td:first-child img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.main_post tbody tr td:last-child{
+  font-size: 0.9rem;
+}
+
+.main_post tbody h4{
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.main_post tbody p{
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: 2.8em;
+  font-size: 0.9rem;       
+}
+
+
+.main_post tbody tr:nth-child(4n + 1) {
+  background-color: #692c10; /* 패티 */
+  color: rgb(253, 216, 147);
+}
+
+.main_post tbody tr:nth-child(4n + 2) {
+  background-color: #8dca14; /* 채소 */
+}
+
+.main_post tbody tr:nth-child(4n + 3) {
+  background-color: #fa4020; /* 케찹 */
+  color: rgb(253, 216, 147);
+
+}
+
+.main_post tbody tr:nth-child(4n + 4) {
+  background-color: #ffd736; /* 머스타드 */
+}
+
+
+
+article{
+  width: 100%;
+  height: 100%;
+  background-color: #ffedc8;
+}
+
+.topInfo{
+  width: 100%;
+  height: 5%;
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  width: 100%;
+  height: 85%;
+  padding: 50px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+
+.botInfo{
+  height: 10%;
+  background-color: rgb(248, 235, 50);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif
+
+}
