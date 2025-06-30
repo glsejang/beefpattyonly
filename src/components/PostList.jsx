@@ -12,7 +12,7 @@ function MainPost(props){
     const [post, setPost] = useState([])
 
     useEffect(()=>{
-        axios.get('/data/post.json')
+        axios.get(`${basePath}/data/post.json`)
         .then((res) =>{
             if( page == "Home"){
                 const preview = res.data.slice(0,5)
