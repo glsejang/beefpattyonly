@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/PP-beefpattyonly/' : '/',
+  base: mode === 'production' ? '/beefpattyonly/' : '/',
   plugins: [react()]
 }))
