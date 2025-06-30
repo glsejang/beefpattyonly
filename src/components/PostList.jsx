@@ -10,6 +10,7 @@ function MainPost(props){
 
     const page = useSelector((state) => state.page.value)  
     const [post, setPost] = useState([])
+    const basePath = import.meta.env.MODE === 'production' ? '/beefpattyonly' : '';
 
     useEffect(()=>{
         axios.get(`${basePath}/data/post.json`)
